@@ -5,7 +5,7 @@ Day-1
 ## ✅ Tasks Completed
 
 - [x] Created private GitHub repo `us-accidents-risk`
-- [x] Added `.gitignore`, `README.md`, initial structure (`data/.gitkeep`, `notebooks/.gitkeep`, `scripts/download_data.py`)
+- [x] Added `.gitignore`, `README.md`, initial structure (`data/.gitkeep`, `notebooks/.gitkeep`, `scripts/download_data.py`, `requirements.txt`)
 - [x] Updated `.gitignore` to exclude data folder but keep `.gitkeep`.
       Added these lines in the end of .gitignore file:
 # Ignore dataset files
