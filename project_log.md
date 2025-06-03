@@ -8,10 +8,11 @@ Day-1
 - [x] Added `.gitignore`, `README.md`, initial structure (`data/.gitkeep`, `notebooks/.gitkeep`, `scripts/download_data.py`, `requirements.txt`)
 - [x] Updated `.gitignore` to exclude data folder but keep `.gitkeep`.
       Added these lines in the end of .gitignore file:
+ ```     
 # Ignore dataset files
-
 /data/*
-!data/.gitkeep 
+!data/.gitkeep
+```
 - [x] Decided to use Google Colab for analysis (due to convenience and no setup)
 - [x] Plan to use DuckDB for out-of-core querying of full dataset
 
@@ -48,8 +49,10 @@ Wrote `scripts/download_data.py` with a `download_and_extract()`  function
 
 Ran the script from terminal:
 
-`cd ~/Desktop/Data_science+AI/us-accidents-risk
-python3 scripts/download_data.py`
+```
+cd ~/Desktop/Data_science+AI/us-accidents-risk
+python3 scripts/download_data.py
+```
 
 Downloaded and extracted the dataset to:
 
