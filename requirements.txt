@@ -1,0 +1,5 @@
+kaggle
+duckdb
+pandas
+matplotlib
+seaborn
