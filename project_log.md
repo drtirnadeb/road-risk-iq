@@ -66,8 +66,7 @@ File size: ~3GB unzipped
 - This script authenticates with the Kaggle API using `kaggle.json` and downloads the **US Accidents** dataset to the local `data/` directory.
 - Committed directly to the `main` branch with the message:
 
-  ```
-Add dataset download script using Kaggle API
+  ```Add dataset download script using Kaggle API
 This script authenticates using kaggle.json and downloads the US Accidents dataset to the data/ folder.
 ```
 
