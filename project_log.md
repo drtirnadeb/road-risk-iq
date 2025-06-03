@@ -29,29 +29,28 @@ Day-1
 - Clicked "Create New API Token"
 - Saved the downloaded `kaggle.json` file to my local project folder:
 
-```plaintext
-/Users/deb/Desktop/Data_science+AI/us-accidents-risk/kaggle.json
+`/Users/deb/Desktop/Data_science+AI/us-accidents-risk/kaggle.json`
 
 
 Then moved it to the secure hidden folder using:
 
-mkdir -p ~/.kaggle
+`mkdir -p ~/.kaggle
 mv ~/Desktop/Data_science+AI/us-accidents-risk/kaggle.json ~/.kaggle/kaggle.json
-chmod 600 ~/.kaggle/kaggle.json
+chmod 600 ~/.kaggle/kaggle.json`
 
 ✅ This sets the correct permissions and location for the Kaggle API to authenticate.
 
 ✅ Dataset Download
-Wrote scripts/download_data.py with a download_and_extract() function
+Wrote `scripts/download_data.py` with a `download_and_extract()`  function
 
 Ran the script from terminal:
 
-cd ~/Desktop/Data_science+AI/us-accidents-risk
-python3 scripts/download_data.py
+`cd ~/Desktop/Data_science+AI/us-accidents-risk
+python3 scripts/download_data.py`
 
 Downloaded and extracted the dataset to:
 
-/Users/deb/Desktop/Data_science+AI/us-accidents-risk/data/US_Accidents.csv
+`/Users/deb/Desktop/Data_science+AI/us-accidents-risk/data/US_Accidents.csv`
 File size: ~3GB unzipped
 
 ## 🚧 Next Steps
