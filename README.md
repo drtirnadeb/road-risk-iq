@@ -22,9 +22,26 @@ This project analyzes traffic accident patterns in the United States using a lar
 
 ## 📌 To Do
 - [x] GitHub setup
-- [ ] Dataset download
+- [x] Dataset download
 - [ ] Compute risk metrics
 - [ ] EDA & visualizations
 - [ ] Final writeup
+
+## 🛠 Local Setup Notes (for reproducibility)
+
+To download the dataset locally:
+
+1. Generate your Kaggle API token at [kaggle.com/account](https://www.kaggle.com/account)
+2. Save `kaggle.json` to the hidden folder:
+
+```bash
+mkdir -p ~/.kaggle
+mv /path/to/kaggle.json ~/.kaggle/kaggle.json
+chmod 600 ~/.kaggle/kaggle.json
+```
+Run the download script:
+
+`python scripts/download_data.py`
+
 
 ---
