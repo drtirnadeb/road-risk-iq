@@ -34,8 +34,8 @@ Day-1
 
 Then moved it to the secure hidden folder using:
 
-`mkdir -p ~/.kaggle
-mv ~/Desktop/Data_science+AI/us-accidents-risk/kaggle.json ~/.kaggle/kaggle.json
+`mkdir -p ~/.kaggle \
+mv ~/Desktop/Data_science+AI/us-accidents-risk/kaggle.json ~/.kaggle/kaggle.json \
 chmod 600 ~/.kaggle/kaggle.json`
 
 ✅ This sets the correct permissions and location for the Kaggle API to authenticate.
