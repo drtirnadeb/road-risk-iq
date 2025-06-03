@@ -44,7 +44,7 @@ chmod 600 ~/.kaggle/kaggle.json
 
 ✅ This sets the correct permissions and location for the Kaggle API to authenticate.
 
-✅ Dataset Download
+### ✅ Dataset Download
 Wrote `scripts/download_data.py` with a `download_and_extract()`  function
 
 Ran the script from terminal:
@@ -59,6 +59,17 @@ Downloaded and extracted the dataset to:
 `/Users/deb/Desktop/Data_science+AI/us-accidents-risk/data/US_Accidents.csv`
 
 File size: ~3GB unzipped
+
+### ✅ Dataset Download Script Committed
+
+- Created and saved `scripts/download_data.py` inside the repository
+- This script authenticates with the Kaggle API using `kaggle.json` and downloads the **US Accidents** dataset to the local `data/` directory.
+- Committed directly to the `main` branch with the message:
+
+  ```
+Add dataset download script using Kaggle API
+This script authenticates using kaggle.json and downloads the US Accidents dataset to the data/ folder.
+```
 
 ## 🚧 Next Steps
 - [ ] Create initial EDA notebook and save to `notebooks/`
