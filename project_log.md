@@ -69,6 +69,31 @@ File size: ~3GB unzipped
   ```
   Add dataset download script using Kaggle API.  This script authenticates using kaggle.json and downloads the US Accidents dataset to the data/ folder.```
 
+### ✅ GitHub Access from Terminal Setup
+
+- Installed [GitHub CLI (`gh`)](https://cli.github.com/) using Homebrew:
+  ```bash
+  brew install gh ```
+
+  Authenticated GitHub from terminal:
+
+`gh auth login`
+
+→ Logged in using web browser authentication.
+→ Confirmed successful login with:
+
+`gh auth status`
+
+Removed manually created local project folder and re-cloned the GitHub repository to link it properly:
+
+```
+cd ~/Desktop/Data_science+AI
+mv us-accidents-risk mv us-accidents-risk-1 # renamed previously existing directory
+git clone https://github.com/drtirnadeb/us-accidents-risk.git
+cd us-accidents-risk
+```
+✅ Now working entirely from a Git-tracked folder connected to GitHub for terminal-based commits, branching, and pull requests.
+
 ## 🚧 Next Steps
 - [ ] Create initial EDA notebook and save to `notebooks/`
 - [ ] Compute risk metrics by state, severity, and weather condition
