@@ -1,3 +1,5 @@
+#script to download the kaggle data
+
 import os
 from kaggle.api.kaggle_api_extended import KaggleApi
 
