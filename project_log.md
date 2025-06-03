@@ -9,8 +9,9 @@ Day-1
 - [x] Updated `.gitignore` to exclude data folder but keep `.gitkeep`.
       Added these lines in the end of .gitignore file:
 # Ignore dataset files
+
 /data/*
-!data/.gitkeep
+!data/.gitkeep 
 - [x] Decided to use Google Colab for analysis (due to convenience and no setup)
 - [x] Plan to use DuckDB for out-of-core querying of full dataset
 
