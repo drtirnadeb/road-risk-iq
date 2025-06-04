@@ -44,4 +44,22 @@ Run the download script:
 `python scripts/download_data.py`
 
 
+## 📊 Exploratory Data Analysis (EDA)
+
+An initial exploratory data analysis has been conducted using [DuckDB](https://duckdb.org/), enabling fast SQL queries on the full dataset without loading it entirely into memory.
+
+📁 Notebook: [`notebooks/us_accidents_duckdb_eda.ipynb`](notebooks/us_accidents_duckdb_eda.ipynb)
+
+Key insights covered:
+- Column types and dataset schema
+- Missing value overview across features
+- Severity distribution statistics
+- Top 10 accident-prone U.S. states
+
+This analysis serves as a foundation for computing risk metrics and identifying high-impact variables.
+
+➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/1) for full implementation details. *(Update link if needed)*
+
+
+
 ---
