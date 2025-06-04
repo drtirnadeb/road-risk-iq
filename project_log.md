@@ -94,10 +94,52 @@ cd us-accidents-risk
 ```
 ✅ Now working entirely from a Git-tracked folder connected to GitHub for terminal-based commits, branching, and pull requests.
 
+
+### ✅ Added Exploratory Data Analysis (EDA) Notebook – DuckDB
+
+Created us_accidents_duckdb_eda.ipynb under notebooks/
+
+The notebook performs initial analysis using DuckDB, covering column summaries, missing values, state-wise accident distribution, and basic descriptive statistics
+
+This file is available in the eda-duckdb feature branch and has been submitted via pull request for review.
+
+
+### ✅ GitHub Workflow Steps
+
+
+```
+# 1. Created GitHub issue to track EDA task
+# (On GitHub) → Issues → New → Title: "Initial EDA with DuckDB"
+
+# 2. Created and switched to a new branch
+git checkout -b eda-duckdb
+
+# 3. Saved notebook to the notebooks/ folder inside the cloned repo
+
+# 4. Staged the new notebook
+git add notebooks/us_accidents_duckdb_eda.ipynb
+
+# 5. Committed the notebook with a descriptive message
+git commit -m "Add initial DuckDB-based EDA on US Accidents dataset"
+
+# 6. Pushed the feature branch to GitHub
+git push origin eda-duckdb
+
+# 7. Opened a pull request on GitHub from eda-duckdb → main
+#     → Title: Initial EDA with DuckDB
+#     → Description: Summary of what's inside the notebook
+#     → Linked it to the GitHub issue (e.g., Closes #1)
+
+```
+
+
+
+
+
 ## 🚧 Next Steps
 - [ ] Create initial EDA notebook and save to `notebooks/`
 - [ ] Compute risk metrics by state, severity, and weather condition
 - [ ] Create visualizations using seaborn or plotly
 - [ ] Write final README with instructions
-- [ ] Add collaborators and notify by June 11
+- [ ] Add collaborators and notify by June 9
 
