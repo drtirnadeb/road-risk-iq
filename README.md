@@ -58,7 +58,7 @@ Key insights covered:
 
 This analysis serves as a foundation for computing risk metrics and identifying high-impact variables.
 
-➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/1) for full implementation details. *(Update link if needed)*
+➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/1) for full implementation details. 
 
 
 
