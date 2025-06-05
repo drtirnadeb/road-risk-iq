@@ -20,6 +20,18 @@ This project analyzes traffic accident patterns in the United States using a lar
 2. Run `scripts/download_data.py` to fetch the dataset
 3. Analyze and visualize data in `notebooks/`
 
+## 📦 Dependencies
+
+- Python 3.9+
+- pandas
+- seaborn / matplotlib
+- duckdb
+- kaggle
+
+Install all dependencies with:
+
+`pip install -r requirements.txt`
+
 ## 📌 To Do
 - [x] GitHub setup
 - [x] Dataset download
@@ -71,6 +83,7 @@ This analysis serves as a foundation for computing risk metrics and identifying 
 
 
 ➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/1) for full implementation details. 
+➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/2) for full implementation details of the full EDA assignment.
 
 
 
