@@ -161,7 +161,7 @@ Day-2
 - Created a **feature branch** to track this major addition:
   `git checkout -b feature/full-eda-assignment`
 
- * Committed notebook and image files, pushed to GitHub:
+Committed notebook and image files, pushed to GitHub:
 
    ```
 git add notebooks/us_accidents_duckdb_eda.ipynb
