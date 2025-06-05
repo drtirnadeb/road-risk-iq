@@ -192,11 +192,16 @@ Description: Includes all visualizations, questions answered, and final project 
 Labels: enhancement, assignment
 ```
 
-📝 Purpose of Workflow
 
-* Used feature branches and pull requests to modularize development, ensure trackability of large tasks, and allow version-controlled commits before merging to main.
+### 📝 Purpose of Workflow
 
-* Followed Git best practices for issue-based workflow and clean branch management, which aligns with collaborative, team-scale data science workflows.
+- Followed a **basic Gitflow strategy** as outlined in the assignment:
+  - Opened an **issue** and a **corresponding feature branch** (`feature/full-eda-assignment`) to isolate work on the EDA assignment
+  - Used a **pull request** to review and merge changes into `main` once complete
+  - Maintained a `.gitignore` file that excludes large data files (`/data/*`) and any virtual environments
+
+- This strategy supports **continuous delivery**, clean version control, and allows for **transparent code review and discussion** before merging.
+- Ensures that all major contributions (e.g., EDA notebook and visualizations) are **modular, well-documented, and traceable** within the GitHub repository.
 
 
 
