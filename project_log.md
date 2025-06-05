@@ -133,13 +133,73 @@ git push origin eda-duckdb
 ```
 
 
-
-
-
 ## 🚧 Next Steps
 - [ ] Create initial EDA notebook and save to `notebooks/`
 - [ ] Compute risk metrics by state, severity, and weather condition
 - [ ] Create visualizations using seaborn or plotly
 - [ ] Write final README with instructions
 - [ ] Add collaborators and notify by June 9
+
+ ---
+
+Day-2
+
+## ✅ Tasks Completed
+
+- Performed **full-scale Exploratory Data Analysis (EDA)** on the complete US Accidents dataset (~3GB), including:
+  - Initial correlation heatmap and pairplot on subset
+  - Followed by complete temporal, geographical, and severity-based analysis using the full dataset
+
+- Answered all **three assigned questions** from the prompt:
+  1. Accident trends over time (yearly, seasonal, monthly, weekly, hourly)
+  2. Severity trends over time and across geography
+  3. Most common weather conditions by state
+
+- Created relevant plots and saved all outputs into `plots/` (e.g., `plots/time`, `plots/correlation`, `plots/weather`)  
+  Final Jupyter notebook updated in: `notebooks/us_accidents_duckdb_eda.ipynb`
+
+- Created a **feature branch** to track this major addition:
+  `git checkout -b feature/full-eda-assignment`
+
+ * Committed notebook and image files, pushed to GitHub:
+
+   ```
+git add notebooks/us_accidents_duckdb_eda.ipynb
+git add plots/
+git commit -m "Add full EDA notebook and generated plots for full assignment"
+git push origin feature/full-eda-assignment
+```
+
+* Opened a pull request from `feature/full-eda-assignment → main` with description:
+
+This PR includes the completed Exploratory Data Analysis (EDA) assignment:
+
+- Accident trends by year, season, month, weekday, and hour
+- Severity trends over time and across geography
+- Correlation heatmap and pairplot of key numerical features
+- Most common weather conditions by state
+- US-wide accident density and severity mapping
+- All plots saved under `plots/` and final notebook in `notebooks/`
+- README and project log updated
+
+* Successfully **merged the pull request** into main and deleted the feature branch for cleanup
+
+* Also created a **GitHub Issue** to formally track this assignment task:
+
+```Title: Complete EDA Assignment (Full Dataset)
+Description: Includes all visualizations, questions answered, and final project notebook
+Labels: enhancement, assignment
+```
+
+📝 Purpose of Workflow
+
+* Used feature branches and pull requests to modularize development, ensure trackability of large tasks, and allow version-controlled commits before merging to main.
+
+* Followed Git best practices for issue-based workflow and clean branch management, which aligns with collaborative, team-scale data science workflows.
+
+
+
+
+
+
 
