@@ -23,9 +23,10 @@ This project analyzes traffic accident patterns in the United States using a lar
 ## 📌 To Do
 - [x] GitHub setup
 - [x] Dataset download
+- [x] EDA & visualizations
+- [x] Final writeup
 - [ ] Compute risk metrics
-- [ ] EDA & visualizations
-- [ ] Final writeup
+
 
 ## 🛠 Local Setup Notes (for reproducibility)
 
@@ -57,6 +58,17 @@ Key insights covered:
 - Top 10 accident-prone U.S. states
 
 This analysis serves as a foundation for computing risk metrics and identifying high-impact variables.
+
+### A complete EDA assignment has been completed, including:
+
+- Accident trends over **year, season, month, weekday, and hour**
+- Severity distribution across **time and geography**
+- Most common **weather conditions** by state
+- US-wide **accident density and severity heatmaps**
+
+📁 See final notebook: [`notebooks/us_accidents_duckdb_eda.ipynb`](notebooks/us_accidents_duckdb_eda.ipynb)  
+📁 Generated plots saved under: [`notebooks/plots/`](notebooks/plots/)
+
 
 ➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/1) for full implementation details. 
 
