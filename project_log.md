@@ -163,7 +163,8 @@ Day-2
 
  * Committed notebook and image files, pushed to GitHub:
 
-   ```git add notebooks/us_accidents_duckdb_eda.ipynb
+   ```
+git add notebooks/us_accidents_duckdb_eda.ipynb
 git add plots/
 git commit -m "Add full EDA notebook and generated plots for full assignment"
 git push origin feature/full-eda-assignment```
