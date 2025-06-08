@@ -297,11 +297,6 @@ Maintained modularity and clean organization under `notebooks/, outputs/, and pl
 - Clean structure supports both programmatic use (`from accidents import RiskAnalyzer`) and CLI-style loading.
 - Simplifies future unit testing, CI integration, and documentation.
 
-Next steps (optional):
-- Add unit tests
-- Set up GitHub Actions for CI
-- Publish to PyPI (if public distribution is desired)
-
 
 
 
