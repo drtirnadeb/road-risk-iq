@@ -1,6 +1,6 @@
 # 🧾 Project Log – US Accidents Risk
 
-Day-1
+## Day 1
 
 ## ✅ Tasks Completed
 
@@ -142,7 +142,7 @@ git push origin eda-duckdb
 
  ---
 
-Day-2
+## Day 2
 
 ## ✅ Tasks Completed
 
