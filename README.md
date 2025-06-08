@@ -86,5 +86,24 @@ This analysis serves as a foundation for computing risk metrics and identifying 
 ➡️ See the related [pull request](https://github.com/drtirnadeb/us-accidents-risk/pull/2) for full implementation details of the full EDA assignment.
 
 
+## 📊 Risk Metric Computation
+
+We performed an in-depth risk analysis of U.S. traffic accidents using the [US Accidents Dataset (2021)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
+
+### ✔️ Overview of Analysis
+
+- Cleaned and filtered the dataset for valid geolocation and severity data
+- Computed state-level metrics:
+  - **Total accident count**
+  - **Average severity**
+  - **Accident rate normalized by population**
+  - **Composite risk score** combining rate and severity
+- Stratified plots by:
+  - **Top 5 weather conditions** (e.g., Clear, Rain, Haze, Snow, Fog)
+  - **Time of day** and **daylight condition** (e.g., Night vs. Day)
+- Visualizations include heatmaps, bar charts, and choropleth maps
+
+➡️ See `notebooks/risk_metrics_analysis.ipynb` for all plots and detailed breakdowns.
+
 
 ---
