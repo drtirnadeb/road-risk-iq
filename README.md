@@ -103,7 +103,7 @@ We performed an in-depth risk analysis of U.S. traffic accidents using the [US A
   - **Time of day** and **daylight condition** (e.g., Night vs. Day)
 - Visualizations include heatmaps, bar charts, and choropleth maps
 
-➡️ See `notebooks/risk_metrics_analysis.ipynb` for all plots and detailed breakdowns.
+➡️ See `notebooks/us_accidents_risk_metrics.ipynb` for all plots and detailed breakdowns.
 
 
 ---
