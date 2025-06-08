@@ -206,7 +206,7 @@ Labels: enhancement, assignment
 
 ---
 
-## 📅 Day 3–4: Risk Metric Computation and Visualization
+## Day 3–4: Risk Metric Computation and Visualization
 
 ### ✅ Tasks Completed
 
