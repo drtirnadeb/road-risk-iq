@@ -278,6 +278,29 @@ Updated `README.md` to include a section: `📊 Risk Metric` Computation with no
 
 Maintained modularity and clean organization under `notebooks/, outputs/, and plots/`
 
+---
+
+
+## Day 5 – Packaging the RiskAnalyzer Module and Final Enhancements
+
+### 🧩 Key Tasks Completed
+
+- ✅ Refactored the `RiskAnalyzer` class to support **CSV-based input** via `data_path` in addition to direct `DataFrame` input.
+- ✅ Modularized the code as a **Python package** named `accidents` and added an `__init__.py` file to enable imports.
+- ✅ Created a minimal working example script: `examples/example_usage.py` demonstrating basic usage.
+- ✅ Created a sample CSV file (`data/sample_accidents.csv`) for testing the new feature.
+- ✅ Reinstalled the package locally using `pip install -e .` and validated both direct and CSV input methods.
+- ✅ Opened a new **feature branch** (`feature/package-risk-analyzer`) and merged it via a pull request into `main`.
+
+### 📦 Benefits
+- Package is now reusable across notebooks and projects.
+- Clean structure supports both programmatic use (`from accidents import RiskAnalyzer`) and CLI-style loading.
+- Simplifies future unit testing, CI integration, and documentation.
+
+Next steps (optional):
+- Add unit tests
+- Set up GitHub Actions for CI
+- Publish to PyPI (if public distribution is desired)
 
 
 
