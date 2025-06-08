@@ -204,6 +204,83 @@ Labels: enhancement, assignment
 - Ensures that all major contributions (e.g., EDA notebook and visualizations) are **modular, well-documented, and traceable** within the GitHub repository.
 
 
+---
+
+## 📅 Day 3–4: Risk Metric Computation and Visualization
+
+### ✅ Tasks Completed
+
+- Computed **state-level accident risk metrics** based on the full US Accidents dataset:
+  - Grouped accident records by state
+  - Calculated:
+    - Total accident count
+    - Average severity score (scale 1–4)
+    - Population-adjusted accident rate (per 100,000 people)
+    - Composite risk score using a weighted average of normalized severity and rate
+
+- Created **multiple choropleth maps** to visualize:
+  - 📍 Accident Rate per 100,000 people (`accident_rate_per_100k.png`)
+  - ⚠️ Average Severity by state (`avg_severity_by_state.png`)
+  - 🧩 Composite Risk Score (`composite_risk_map.png`)
+
+- Added **barplots and heatmaps** for deeper breakdowns:
+  - By severity level and year
+  - By time of day, daylight vs. darkness
+  - By top 5 weather conditions (normalized)
+
+- Saved all metrics and figures under structured folders inside `notebooks/outputs/`:
+  - `outputs/metrics/`
+  - `outputs/risk_metrics/`
+  - `outputs/3_states/`
+
+- Exported final **state-level risk scores** as a CSV file:
+  - `notebooks/state_risk_scores.csv`
+
+---
+
+### 🔧 Git Workflow
+
+- Created new feature branch for this module:
+`git checkout -b feature/risk-metrics`
+
+- Committed the notebook and relevant assets:
+
+```
+git add notebooks/us_accidents_risk_metrics.ipynb README.md
+git add notebooks/outputs/ metrics/ plots/
+git commit -m "Add risk metric analysis notebook and update README"
+git push origin feature/risk-metrics
+```
+
+
+- Opened a pull request from `feature/risk-metrics → main`:
+- Described the metrics computed and linked visualizations
+- Successfully merged the PR and deleted the branch after merge
+
+---
+
+### 📌 GitHub Issue Tracking
+
+- Created a new **GitHub Issue** to track this milestone:
+```
+Title: Add Risk Metric Computation and Visual Analysis for US Accidents Dataset
+Description: Includes all computed metrics, choropleth visualizations, and temporal/weather breakdowns
+Labels: enhancement, data-analysis
+```
+
+* Closed the issue after successful PR merge
+
+ ### 📝 Notes
+ 
+Used `folium` for interactive mapping; exported static versions as `.png` for reproducibility in notebook and README
+
+Updated `README.md` to include a section: `📊 Risk Metric` Computation with notebook link and description
+
+Maintained modularity and clean organization under `notebooks/, outputs/, and plots/`
+
+
+
+
 
 
 
