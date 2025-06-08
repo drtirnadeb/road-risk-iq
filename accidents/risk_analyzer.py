@@ -5,10 +5,21 @@ import folium
 from sklearn.preprocessing import MinMaxScaler
 
 class RiskAnalyzer:
-    def __init__(self, df: pd.DataFrame, population_dict: dict):
-        self.df = df
+        
+    def __init__(self, df: pd.DataFrame = None, population_dict: dict = None, data_path: str = None):
+        if data_path:
+            self.df = pd.read_csv(data_path)
+        elif df is not None:
+            self.df = df
+        else:
+            raise ValueError("Either `df` or `data_path` must be provided.")
+
+        if population_dict is None:
+            raise ValueError("`population_dict` is required.")
+
         self.population = population_dict
         self.state_stats = None
+
 
     def compute_risk_scores(self):
         grouped = self.df.groupby('State')

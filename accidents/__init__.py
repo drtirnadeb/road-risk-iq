@@ -1,1 +1,1 @@
-from .risk_analyzer import RiskAnalyzer
+from .risk_analyzer import RiskAnalyzer
