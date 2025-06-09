@@ -155,4 +155,7 @@ analyzer.plot_weather_analysis()
 
 * 💡 `examples/example_usage.py`: Standalone script to test package locally
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-Complete-brightgreen)
+
 
