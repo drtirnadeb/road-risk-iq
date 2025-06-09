@@ -126,6 +126,7 @@ pip install -e
 
 You can use the `RiskAnalyzer` class directly in your scripts:
 
+```
 from accidents import RiskAnalyzer
 
 ### Option 1: Load from CSV
@@ -144,6 +145,7 @@ risk_df = analyzer.compute_risk_scores()
 analyzer.plot_risk_map()
 analyzer.plot_time_analysis()
 analyzer.plot_weather_analysis()
+```
 
 ### 📁 Additional Files
 
