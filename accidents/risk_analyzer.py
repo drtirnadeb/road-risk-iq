@@ -47,14 +47,28 @@ class RiskAnalyzer:
             self.state_stats.to_csv(filepath)
         else:
             raise ValueError("Run compute_risk_scores() first.")
-
-    def plot_risk_map(self, metric='Composite_Risk_Score', save_path='risk_map.html'):
+    
+    def plot_risk_map(self, metric='Composite_Risk_Score', save_path='risk_map.html', return_map=False):
         if self.state_stats is None:
             raise ValueError("Run compute_risk_scores() first.")
 
         geojson_url = 'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json'
         state_stats = self.state_stats.copy()
-        state_stats['State_Name'] = state_stats.index
+
+    # 🔁 ADD THIS: Abbreviation to full state name
+        state_abbrev_to_name = {
+            'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+            'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+            'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+            'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+            'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+            'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+            'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+            'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+            'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+            'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming', 'DC': 'District of Columbia'
+        }
+        state_stats['State_Name'] = state_stats.index.map(state_abbrev_to_name)
 
         m = folium.Map(location=[37.8, -96], zoom_start=4)
 
@@ -72,6 +86,10 @@ class RiskAnalyzer:
         ).add_to(m)
 
         m.save(save_path)
+        if return_map:
+            return m
+
+
 
     def plot_time_analysis(self, save_path=None):
         df = self.df.copy()
