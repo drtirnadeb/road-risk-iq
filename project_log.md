@@ -285,7 +285,7 @@ Maintained modularity and clean organization under `notebooks/, outputs/, and pl
 
 ### 🧩 Key Tasks Completed
 
-- ✅ Refactored the `RiskAnalyzer` class to support **CSV-based input** via `data_path` in addition to direct `DataFrame` input.
+- ✅ Factored the `RiskAnalyzer` class to support **CSV-based input** via `data_path` in addition to direct `DataFrame` input.
 - ✅ Modularized the code as a **Python package** named `accidents` and added an `__init__.py` file to enable imports.
 - ✅ Created a minimal working example script: `examples/example_usage.py` demonstrating basic usage.
 - ✅ Created a sample CSV file (`data/sample_accidents.csv`) for testing the new feature.
