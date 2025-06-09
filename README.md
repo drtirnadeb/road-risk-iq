@@ -7,9 +7,47 @@ This project analyzes traffic accident patterns in the United States using a lar
 - Contains 7.7 million records from 49 US states
 
 ## 📁 Project Structure
-- `data/`: Downloaded dataset (ignored by Git)
-- `scripts/`: Data download and processing scripts
-- `notebooks/`: Exploratory notebooks and visualizations
+
+```
+us-accidents-risk/
+├── accidents/                       # 💻 Python package with RiskAnalyzer class
+│   ├── __init__.py
+│   └── risk_analyzer.py
+│
+├── data/                            # 📂 Local dataset (not committed to Git)
+│   └── US_Accidents.csv (ignored)
+│
+├── docs/                            # 🌐 GitHub Pages content (interactive map)
+│   └── us_composite_risk_map.html
+│
+├── examples/                        # 🧪 Example script for testing the package
+│   └── example_usage.py
+│
+├── notebooks/                       # 📒 All exploratory analysis and tests
+│   ├── data/                        # Sample data files for quick tests
+│   │   └── sample_accidents.csv
+│   ├── outputs/                     # Generated CSVs from analysis
+│   │   └── state_risk_scores.csv
+│   ├── plots/                       # 📊 Saved figures (PNG/HTML)
+│   │   ├── composite_risk_map.png
+│   │   ├── avg_severity_by_state.png
+│   │   └── accident_rate_per_100k.png
+│   ├── us_accidents_duckdb_eda.ipynb        # EDA using DuckDB
+│   ├── us_accidents_risk_metrics.ipynb      # Risk metric calculations
+│   ├── test_risk_analyzer.ipynb             # Notebook test of RiskAnalyzer
+│   └── test_risk_analyzer_package.ipynb     # Alternate package usage test
+│
+├── scripts/                        # 🛠️ Utility scripts (e.g., data download)
+│   └── download_data.py
+│
+├── requirements.txt                # 📦 Python dependencies
+├── setup.py                        # ⚙️ Package installation setup
+├── pyproject.toml                  # 🧱 Build system metadata (PEP 517)
+├── .gitignore                      # 🙈 Ignore system and temp files
+├── project_log.md                  # 📝 Task log and Git workflow notes
+└── README.md                       # 📘 Project overview and usage guide
+
+```
 
 
 ## 🛠 Tech Stack
@@ -91,6 +129,21 @@ This analysis serves as a foundation for computing risk metrics and identifying 
 
 We performed an in-depth risk analysis of U.S. traffic accidents using the [US Accidents Dataset (2021)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
 
+
+### 🌐 Visual Demo: Risk Map, EDA & Python Package
+
+![RoadRisk IQ Demo](notebooks/plots/road_risk_iq_demo.gif)
+
+🖱️ *Click below to explore the interactive composite risk map:*
+
+👉 [**Interactive Map**](https://drtirnadeb.github.io/us-accidents-risk/us_composite_risk_map.html)
+
+This visualization summarizes:
+- The severity and frequency–weighted **composite risk map**
+- Key plots from the **exploratory analysis**
+- A demo of the **`RiskAnalyzer` Python package** in action
+
+
 ### ✔️ Overview of Analysis
 
 - Cleaned and filtered the dataset for valid geolocation and severity data
@@ -120,7 +173,7 @@ Clone the repository and install the package in editable mode:
 ```
 git clone https://github.com/drtirnadeb/us-accidents-risk.git
 cd us-accidents-risk
-pip install -e
+pip install -e .
 ```
 
 ### 🚀 Example Usage
@@ -155,6 +208,11 @@ analyzer.plot_weather_analysis()
 * 🧪 `notebooks/test_risk_analyzer.ipynb`: Full test with dummy data
 
 * 💡 `examples/example_usage.py`: Standalone script to test package locally
+
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-Complete-brightgreen)
+
+
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-Complete-brightgreen)
