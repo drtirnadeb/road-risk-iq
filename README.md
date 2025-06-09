@@ -107,3 +107,50 @@ We performed an in-depth risk analysis of U.S. traffic accidents using the [US A
 
 
 ---
+
+## 📦 RiskAnalyzer Python Package
+
+This project includes a reusable Python package: `accidents`, containing a modular class for risk metric computation and visualization.
+
+### 🔧 Installation
+
+Clone the repository and install the package in editable mode:
+
+```
+git clone https://github.com/drtirnadeb/us-accidents-risk.git
+cd us-accidents-risk
+pip install -e
+```
+
+### 🚀 Example Usage
+
+You can use the `RiskAnalyzer` class directly in your scripts:
+
+from accidents import RiskAnalyzer
+
+# Option 1: Load from CSV
+analyzer = RiskAnalyzer(
+    data_path='data/sample_accidents.csv',
+    population_dict={
+        'CA': 39538223, 'TX': 29145505, 'NY': 20201249
+    }
+)
+
+# Option 2: Load from DataFrame
+# analyzer = RiskAnalyzer(df=my_dataframe, population_dict=...)
+
+# Compute metrics
+risk_df = analyzer.compute_risk_scores()
+analyzer.plot_risk_map()
+analyzer.plot_time_analysis()
+analyzer.plot_weather_analysis()
+
+### 📁 Additional Files
+
+* 📄 `accidents/risk_analyzer.py`: Source code for the reusable class
+
+* 🧪 `notebooks/test_risk_analyzer.ipynb`: Full test with dummy data
+
+* 💡 `examples/example_usage.py`: Standalone script to test package locally
+
+
