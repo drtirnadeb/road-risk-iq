@@ -289,7 +289,7 @@ Maintained modularity and clean organization under `notebooks/, outputs/, and pl
 - ✅ Modularized the code as a **Python package** named `accidents` and added an `__init__.py` file to enable imports.
 - ✅ Created a minimal working example script: `examples/example_usage.py` demonstrating basic usage.
 - ✅ Created a sample CSV file (`data/sample_accidents.csv`) for testing the new feature.
-- ✅ Reinstalled the package locally using `pip install -e .` and validated both direct and CSV input methods.
+- ✅ Installed the package locally using `pip install -e .` and validated both direct and CSV input methods.
 - ✅ Opened a new **feature branch** (`feature/package-risk-analyzer`) and merged it via a pull request into `main`.
 
 ### 📦 Benefits
