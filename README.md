@@ -37,7 +37,7 @@ Install all dependencies with:
 - [x] Dataset download
 - [x] EDA & visualizations
 - [x] Final writeup
-- [ ] Compute risk metrics
+- [x] Compute risk metrics
 
 
 ## 🛠 Local Setup Notes (for reproducibility)
