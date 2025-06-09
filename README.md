@@ -11,6 +11,8 @@ This project analyzes traffic accident patterns in the United States using a lar
 - `scripts/`: Data download and processing scripts
 - `notebooks/`: Exploratory notebooks and visualizations
 
+  <pre lang="md"> ## 📁 Project Structure <details> <summary><strong>📂 Repository Layout (click to expand)</strong></summary> ``` us-accidents-risk/ │ ├── accidents/ # Python package with RiskAnalyzer class │ ├── __init__.py │ └── risk_analyzer.py │ ├── data/ # Dataset folder (ignored by Git) │ ├── docs/ # Public HTML for GitHub Pages │ └── us_composite_risk_map.html │ ├── examples/ # Standalone usage scripts │ └── example_usage.py │ ├── notebooks/ # All analysis and visualization notebooks │ ├── us_accidents_duckdb_eda.ipynb │ ├── us_accidents_risk_metrics.ipynb │ ├── test_risk_analyzer.ipynb │ ├── test_risk_analyzer_package.ipynb │ ├── plots/ # Generated figures │ ├── outputs/ # CSVs, maps, exports │ └── composite_risk_map.png # Screenshot for README │ ├── scripts/ # Data download and setup scripts │ └── download_data.py │ ├── README.md ├── project_log.md # Running notes on project progress ├── requirements.txt ├── setup.py └── pyproject.toml ``` </details> </pre>
+
 ## 🛠 Tech Stack
 - Python, DuckDB, Pandas, Seaborn/Matplotlib
 - Google Colab for analysis
