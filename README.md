@@ -128,7 +128,7 @@ You can use the `RiskAnalyzer` class directly in your scripts:
 
 from accidents import RiskAnalyzer
 
-# Option 1: Load from CSV
+### Option 1: Load from CSV
 analyzer = RiskAnalyzer(
     data_path='data/sample_accidents.csv',
     population_dict={
@@ -136,10 +136,10 @@ analyzer = RiskAnalyzer(
     }
 )
 
-# Option 2: Load from DataFrame
-# analyzer = RiskAnalyzer(df=my_dataframe, population_dict=...)
+### Option 2: Load from DataFrame
+### analyzer = RiskAnalyzer(df=my_dataframe, population_dict=...)
 
-# Compute metrics
+### Compute metrics
 risk_df = analyzer.compute_risk_scores()
 analyzer.plot_risk_map()
 analyzer.plot_time_analysis()
